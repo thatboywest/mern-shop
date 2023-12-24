@@ -1,0 +1,66 @@
+/* Add these styles in your CSS file or style block */
+
+.form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form h1 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .inputGroup {
+    margin-bottom: 15px;
+  }
+  
+  .form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .form button {
+    padding: 12px;
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .form button:hover {
+    background-color: #45a049;
+  }
+  
+  .form p {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  .btn {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .btn a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .btn a:hover {
+    color: #4caf50;
+  }
+  

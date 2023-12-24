@@ -1,0 +1,10 @@
+body{
+  background-color: #e0e8ef;
+}
+
+.loader-hidden {
+  display: none;
+}
+.loader-active {
+  display: block;
+}
