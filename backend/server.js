@@ -1,11 +1,14 @@
 const express = require('express');
+
+const serverless=require ("serverless-http");
+
 const mongoose = require('mongoose');
 const productRoute=require("./routers/products")
 const cors = require('cors'); 
 const signinRoute= require("./routers/signin")
 const LoginRoute=require("./routers/login")
 const stripe =require("./routers/stripe")
-
+const router = express.Router();
 const Product = require('./Models/ProductSchema'); // Import the product mode
 
 const app = express();
@@ -25,12 +28,8 @@ mongoose
     console.error('Error connecting to the database:', error);
   });
 
+app.use("/", router);
 app.use("/api/products", productRoute)
 app.use("/api/signin", signinRoute)
 app.use("/api/login", LoginRoute)
 app.use("/api/stripe", stripe)
-
-
-app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
-});
